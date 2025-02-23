@@ -54,7 +54,7 @@ from prophet import Prophet
 
 # ## Read Training Dataset
 # 
-# **Worked on By: Vaishali Gupta**
+
 
 # In[3]:
 
@@ -93,7 +93,6 @@ plt.show()
 
 # ## Split Dataset for the two Cities
 # 
-# **Worked on By: Vaishali Gupta**
 
 # In[6]:
 
@@ -133,7 +132,7 @@ target = ['total_cases']
 
 # ## Handle Missing Values in the two Cities Datasets
 # 
-# **Worked on By: Samiksha Sharma**
+
 
 # In[9]:
 
@@ -271,8 +270,7 @@ VizScaledCols(dengue_iq, weather_features, "Histograms for all scaled columns in
 # # Explore and Visualize the two cities Datasets
 
 # ## Correlation
-# 
-# **Worked on By: Vaishali Gupta**
+
 
 # In[23]:
 
@@ -299,7 +297,7 @@ VisualizeCorrelation(dengue_iq, 'Correlation Heatmap for Iquitos')
 
 # ## Features
 # 
-# **Worked on By: Shweta Bhati and Samiksha Sharma**
+
 
 # In[25]:
 
@@ -416,8 +414,7 @@ dengue_iq.head()
 
 
 # ## Target
-# 
-# **Worked on By: Samiksha Sharma**
+
 
 # In[38]:
 
@@ -567,7 +564,7 @@ VizTarget2(dengue_iq, "Number of Cases per Week in Iquitos")
 
 # ## Split Training Dataset into Train Data for Modeling and Test Data for Testing
 # 
-# **Worked on By: Vaishali Gupta**
+
 
 # In[47]:
 
@@ -617,19 +614,8 @@ y_iq_test = dengue_iq_test[target]
 
 # ## Regression Modeling and Testing
 # 
-# **Worked on By: Vaishali Gupta, Samiksha Sharma, and Shweta Bhati**
-# 
-# We worked to test each model separately on our training data to study it and learn how it works.
-# 
-# * Linear Regression - Vaishali Gupta
-# * Random Forest Regression, Support Vector Machine - Samiksha Sharma
-# * Gradient Boost Regression and Neural Network - Shweta Bhati
-# 
-# General function "FitModelandEvaluate" - Smaiksha Sharma
-# 
-# General function "VizMSEValues" - Shweta Bhati
-# 
-# General function "VizPredictedvsActual" - Vaishali Gupta
+
+
 
 # In[49]:
 
@@ -940,22 +926,7 @@ print("MSE for the Random forest Regression model for Iquitos Dataset: ", mse_iq
 
 
 # ## Time Series Modelling
-# 
-# **Worked on By: Vaishali Gupta, Samiksha Sharma, and Shweta Bhati**
-# 
-# We worked to test each model separately on our training data to study it and learn how it works.
-# 
-# * ARIMA - Vaishali Gupta
-# * Negative Binomial - Samiksha Sharma
-# * Prophet - Shweta Bhati
-# 
-# General functions "BestParamARIMA", "VizPredictedvsActualARIMA" - Vaishali Gupta
-# 
-# General functions "GetStatsNegBinomialModel", "VizPredictedvsActualStatsNegBin" - Samiksha Sharma
-# 
-# General functions "GetProphet", "VizPredictedvsActualProphet" - Shweta Bhati
-# 
-# General function "VizMSEValues2" - Samiksha Sharma
+
 
 # In[75]:
 
@@ -1392,8 +1363,7 @@ best_ts_model_iq
 # # Final Testing Dataset
 
 # ## Read Testing Dataset
-# 
-# **Worked on By: Vaishali Gupta**
+
 
 # In[118]:
 
@@ -1412,7 +1382,7 @@ dengue_final_test.head()
 
 # ## Split Dataset for the two Cities
 # 
-# **Worked on By: Vaishali Gupta**
+
 
 # In[119]:
 
@@ -1439,7 +1409,7 @@ dengue_final_test_iq.head()
 
 # ## Handle Missing Values in the two Cities Datasets
 # 
-# **Worked on By: Samiksha Sharma**
+
 
 # In[122]:
 
@@ -1497,7 +1467,7 @@ VizScaledCols(dengue_final_test_iq, weather_features, "Histograms for all scaled
 
 # ## Feature Extraction
 # 
-# **Worked on By: Samiksha Sharma**
+
 
 # In[127]:
 
@@ -1548,7 +1518,7 @@ dengue_final_test_iq.head()
 
 # # Regression Predictions on Final Datatset
 # 
-# **Worked on By: Samiksha Sharma**
+
 
 # In[131]:
 
