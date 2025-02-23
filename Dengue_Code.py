@@ -1657,5 +1657,3 @@ dengue_test_stats_preds_final = pd.concat([dengue_test_sj_stats_preds_final, den
 
 dengue_test_stats_preds_final.to_csv('Test_Data_Time_Series_Preditions.csv', index=False)
 
-
-# **Final Code** was revised by Samiksha Sharma and proof read and retested by Shweta Bhati and Vaishali Gupta
